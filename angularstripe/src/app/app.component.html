@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test App</title>
+</head>
+
+<body>
+  <div style="height: 100vh; width: 100vw;" class="d-flex flex-column justify-content-center bg-light">
+    <div class="d-flex flex-column justify-content-center mx-auto bg-white border p-4"
+      style="height: 400px; width: 400px;">
+      <div class="d-flex flex-column">
+        <h3 class="text-center">Card Info</h3>
+        <input type="text" class="form-control p-2 fs-18 my-2" placeholder="card number" [(ngModel)]="card" />
+        <input type="text" class="form-control p-2 fs-18 my-2" placeholder="date of expiry" [(ngModel)]="doe" />
+        <input type="text" class="form-control p-2 fs-18 my-2" placeholder="cvc" [(ngModel)]="cvc" />
+        <div class="d-flex justify-content-center mt-4">
+          <button class="btn btn-success w-50" (click)="postCharge()">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
